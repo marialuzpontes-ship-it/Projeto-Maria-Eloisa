@@ -31,8 +31,7 @@ height: 80px;
 .artigo-autor {
   font-weight: bold;  
 }
-   
-
+ 
 </style>
 </head>
 <body>
@@ -42,15 +41,26 @@ height: 80px;
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
        
     </header>
- <main>
+<main>
     <img src="imagem-blog.png" alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-
-    <div></div>
+ <div>
     <h2>Meu primeiro post</h2>
     <p class="artigo-autor">Por: Maria Eloisa</p>
     <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+    <button>🫂 <span></span>​</button>
+ </div>
    
 </main>
 
 </body>
+<script>
+    const botao = document.querySelector("button");
+
+    function botaoClicado() {
+ console.log("fui clicado");
+ let texto = botao.querySelector("span");
+ texto.textContent++;
+ }
+
+</script>
 </html>
